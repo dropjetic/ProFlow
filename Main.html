@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Website</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: Arial, sans-serif;
+      background: url('https://iili.io/Fe0tyRs.png') no-repeat center center fixed;
+      background-size: cover;
+      position: relative;
+      overflow-x: hidden;
+      color: white;
+      font-weight: bold;
+    }
+
+    .background-text-container {
+      position: fixed;
+      top: 90px;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+      z-index: 1;
+      white-space: nowrap;
+      user-select: none;
+    }
+
+    .background-text-main {
+      font-size: 36px;
+      margin: 0;
+      -webkit-text-stroke: 1.5px black;
+      text-shadow: 2px 2px 4px black;
+      color: white;
+    }
+
+    .background-text-sub {
+      font-size: 18px;
+      margin-top: 5px;
+      -webkit-text-stroke: 1.5px black;
+      text-shadow: 2px 2px 4px black;
+      color: white;
+    }
+
+    .navbar {
+      background-color: rgba(0,0,0,0.7);
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      z-index: 10;
+    }
+
+    .navbar img {
+      height: 70px;
+      -webkit-text-stroke: 0;
+      text-shadow: none;
+    }
+
+    .nav-links-center {
+      display: flex;
+      gap: 20px;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .nav-links-right {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links-center a,
+    .nav-links-right a {
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      -webkit-text-stroke: 0;
+      text-shadow: none;
+      font-size: 16px;
+      transition: transform 0.2s ease;
+      user-select: none;
+    }
+
+    .nav-links-center a:hover,
+    .nav-links-right a:hover {
+      transform: translateY(-3px);
+    }
+
+    .call-to-action {
+      margin: 180px auto 40px;
+      max-width: 480px;
+      text-align: center;
+      padding: 20px;
+      background-color: rgba(0,0,0,0.5);
+      border-radius: 25px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+      color: white;
+      font-weight: bold;
+      z-index: 10;
+      position: relative;
+      user-select: none;
+      -webkit-text-stroke: 0;
+      text-shadow: none;
+    }
+
+    .cta-button {
+      margin-top: 15px;
+      background-color: white;
+      border: 2px solid black;
+      padding: 12px 30px;
+      color: black;
+      font-weight: bold;
+      font-size: 16px;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      user-select: none;
+      -webkit-text-stroke: 0;
+      text-shadow: none;
+    }
+
+    .cta-button:hover {
+      background-color: black;
+      color: white;
+      border-color: white;
+      -webkit-text-stroke: 0;
+      text-shadow: none;
+    }
+
+    @media (max-width: 600px) {
+      .background-text-main {
+        font-size: 22px;
+      }
+
+      .background-text-sub {
+        font-size: 14px;
+      }
+
+      .background-text-container {
+        top: 80px;
+      }
+
+      .call-to-action {
+        margin: 150px 20px 40px;
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="background-text-container">
+    <h1 class="background-text-main" id="text">ProFlow, fix those missed calls.</h1>
+    <div class="background-text-sub">Automation Service</div>
+  </div>
+
+  <div class="navbar">
+    <img src="https://iili.io/Fel2FWb.png" alt="Logo" />
+    <div class="nav-links-center">
+      <a href="#">Contact</a>
+      <a href="#">Terms</a>
+      <a href="#">How It Works</a>
+    </div>
+    <div class="nav-links-right">
+      <a href="#">Log In</a>
+      <a href="#">Sign Up</a>
+    </div>
+  </div>
+
+  <div class="call-to-action">
+    <p>Create an account now to get started with our automation services.</p>
+    <button class="cta-button" onclick="alert('Redirecting to sign up...')">Continue ➡️</button>
+  </div>
+
+</body>
+</html>
